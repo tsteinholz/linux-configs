@@ -1,0 +1,44 @@
+use_xft yes 
+xftfont Radio Space:size=10
+xftalpha 1.0
+update_interval 0.4s
+total_run_times 0 
+
+double_buffer yes 
+own_window yes 
+own_window_transparent yes 
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager 
+own_window_type override 
+
+draw_shades yes 
+draw_outline no 
+draw_borders no 
+draw_graph_borders yes 
+default_color 7F7F7F 
+default_shade_color black 
+default_outline_color white 
+alignment bottom_right 
+gap_x 5 
+gap_y 2 
+no_buffers yes 
+uppercase no 
+cpu_avg_samples 2 
+override_utf8_locale yes
+alignment bottom_right
+
+color1 333333 # Gray
+color2 006FC0 # Blue
+color3 8AD749 # Green
+color4 EECE01 # Yellow
+color5 F8981F # Orange
+color6 F80E27 # Red
+
+TEXT
+
+${alignr}Crunchbang Statler
+${hr}
+${color}CPU ${if_match ${cpu} >0}${color2}${else}${color1}${endif}O${if_match ${cpu} >10}${color2}${else}${color1}${endif}O${if_match ${cpu} >20}${color3}${else}${color1}${endif}O${if_match ${cpu} >30}${color3}${else}${color1}${endif}O${if_match ${cpu} >40}${color4}${else}${color1}${endif}O${if_match ${cpu} >50}${color4}${else}${color1}${endif}O${if_match ${cpu} >60}${color5}${else}${color1}${endif}O${if_match ${cpu} >70}${color5}${else}${color1}${endif}O${if_match ${cpu} >80}${color6}${else}${color1}${endif}O${if_match ${cpu} >90}${color6}${else}${color1}${endif}O  ${color}${cpu cpu}% ${color} $alignr$mem 
+${color}RAM ${if_match ${memperc} >0}${color2}${else}${color1}${endif}O${if_match ${memperc} >10}${color2}${else}${color1}${endif}O${if_match ${memperc} >20}${color3}${else}${color1}${endif}O${if_match ${memperc} >30}${color3}${else}${color1}${endif}O${if_match ${memperc} >40}${color4}${else}${color1}${endif}O${if_match ${memperc} >50}${color4}${else}${color1}${endif}O${if_match ${memperc} >60}${color5}${else}${color1}${endif}O${if_match ${memperc} >70}${color5}${else}${color1}${endif}O${if_match ${memperc} >80}${color6}${else}${color1}${endif}O${if_match ${memperc} >90}${color6}${else}${color1}${endif}O ${color}${memperc}% $alignr$memmax
+${color}Process: ${color2}${processes} ${alignr} ${color} Running : ${color2}${running_processes}
+${color}Space: ${alignc} ${fs_used /} / ${fs_size /} ${alignr} free ${fs_free_perc /}%
+${color}Update: ${color3}${if_match ${texeci 360 aptitude search "~U" | wc -l | tail} ==0}no pkg${else}${if_match ${texeci 360 aptitude search "~U" | wc -l | tail} ==1}1 pkg ${else}${texeci 360 aptitude search "~U" | wc -l | tail} pkgs ${endif}${endif}
