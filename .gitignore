@@ -4,11 +4,11 @@
 # Except for...
 !.vimrc
 !.bashrc
-!.vim/
+!.vim/*
 !.conky
 !.conkyrc
 !.xinitrc
-!Pictures/wallpaper.png
-!.i3/
+!~/Pictures/wallpaper.png
+!.i3/*
 !.archey3.cfg
-!.scripts/
+!.scripts/*
