@@ -1,4 +1,5 @@
 syntax on
+
 set tabstop=4
 set shiftwidth=4
 set incsearch
@@ -38,10 +39,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/ZoomWin'
 Plugin 'rust-lang/rust.vim'
 
-Plugin 'joshdick/onedark.vim'
 Plugin 'sickill/vim-monokai'
-Plugin 'atweiden/vim-colors-behelit'
-Plugin 'thomd/vim-wasabi-colorscheme'
 
 call vundle#end()
 filetype plugin indent on
