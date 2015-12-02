@@ -1,20 +1,19 @@
-! Molokai theme
-*xterm*background: #101010
-*xterm*foreground: #d0d0d0
-*xterm*cursorColor: #d0d0d0
-*xterm*color0: #101010
-*xterm*color1: #960050
-*xterm*color2: #66aa11
-*xterm*color3: #c47f2c
-*xterm*color4: #30309b
-*xterm*color5: #7e40a5
-*xterm*color6: #3579a8
-*xterm*color7: #9999aa
-*xterm*color8: #303030
-*xterm*color9: #ff0090
-*xterm*color10: #80ff00
-*xterm*color11: #ffba68
-*xterm*color12: #5f5fee
-*xterm*color13: #bb88dd
-*xterm*color14: #4eb4fa
-*xterm*color15: #d0d0d0
+*background:#181512
+*foreground:#EDDCD3
+
+*color0:#333333
+*color1:#8C4665
+*color2:#287373
+*color3:#F74372
+*color4:#40BFA6
+*color5:#F82B4A
+*color6:#31658C
+*color7:#D3D7CF
+*color8:#3D3D3D
+*color9:#BF4D80
+*color10:#53A6A6
+*color11:#DB63B5
+*color12:#40DDC2
+*color13:#F2397A
+*color14:#6096BF
+*color15:#C0C0C0
